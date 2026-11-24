@@ -1,0 +1,140 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  color: #222;
+  background-color: #f8f9fa;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+h1, h2 {
+  color: #111;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+h1 {
+  border-bottom: 2px solid #dee2e6;
+  padding-bottom: 8px;
+}
+
+a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Formulários (cadastro de produtos, login e funcionários) */
+form {
+  background: #fff;
+  padding: 16px;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+/* Evita que o formulário inline do botão "Excluir" ganhe caixa e borda */
+li form {
+  background: transparent;
+  padding: 0;
+  border: none;
+  margin: 0;
+  display: inline;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="file"],
+input:not([type]) {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+input:focus {
+  outline: none;
+  border-color: #0d6efd;
+}
+
+small {
+  display: block;
+  color: #6c757d;
+  margin-top: 4px;
+}
+
+/* Botões */
+button {
+  margin-top: 16px;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #0d6efd;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0b5ed7;
+}
+
+/* Botão específico de excluir produto na lista */
+button[name="excluir"] {
+  margin-top: 0;
+  margin-left: 6px;
+  padding: 4px 10px;
+  font-size: 0.85rem;
+  background-color: #dc3545;
+}
+
+button[name="excluir"]:hover {
+  background-color: #bb2d3b;
+}
+
+/* Listas (menu inicial e vitrine de produtos) */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Miniaturas das fotos dos produtos */
+img {
+  border-radius: 4px;
+  object-fit: cover;
+  border: 1px solid #dee2e6;
+}
